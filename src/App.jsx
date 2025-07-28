@@ -55,7 +55,7 @@ function Card({ cardHolder, cardNumber, expDate, cvc }) {
 			<div className="w-[70%] absolute top-20 left-25 h-[100px] flex items-center justify-center">
 				<div className="relative">
 					<img src="./images/bg-card-back.png" alt="card-back" />
-					<div className="absolute top-18 left-59 text-white text-sm">
+					<div className="absolute top-15 left-50 text-white text-sm">
 						<input
 							type="text"
 							placeholder="000"
@@ -70,7 +70,7 @@ function Card({ cardHolder, cardNumber, expDate, cvc }) {
 				<div className="relative">
 					<img src="./images/bg-card-front.png" alt="card-front" />
 
-					<div className="absolute top-6 left-6 w-[100px] h-[50px]">
+					<div className="absolute top-5 left-5 w-[100px] h-[50px]">
 						<img src="./images/card-logo.svg" alt="card-logo" className="h-8" />
 					</div>
 					<div className="absolute bottom-13 w-full left-0 right-0 text-white text-lg ">
@@ -79,11 +79,11 @@ function Card({ cardHolder, cardNumber, expDate, cvc }) {
 							placeholder="0000 0000 0000 0000"
 							value={cardNumber}
 							className="w-full 
-								text-center tracking-widest bg-transparent border-none text-white placeholder:gray-300 focus:outline-none focus:ring-0"
+								text-center tracking-wider px- bg-transparent border-none text-white placeholder:gray-300 focus:outline-none focus:ring-0"
 							disabled
 						/>
 					</div>
-					<div className="absolute bottom-6 left-6 text-white text-sm">
+					<div className="absolute bottom-5 left-6 text-white text-sm">
 						<input
 							type="text"
 							placeholder="JANE APPLESSED"
@@ -93,7 +93,7 @@ function Card({ cardHolder, cardNumber, expDate, cvc }) {
 							onChange={() => {}}
 						/>
 					</div>
-					<div className="absolute bottom-6 left-56 text-white text-sm">
+					<div className="absolute bottom-5 left-50 text-white text-sm">
 						<input
 							type="text"
 							placeholder="00/00"
@@ -142,7 +142,7 @@ function Form({
 	const maxLength = 2; // Maximum length for month and year inputs
 
 	return (
-		<div className="flex flex-col items-center justify-center h-[300px] sm:h-[400px] md:h-full pt-4  sm:pt-6 md:pt-0">
+		<div className="flex flex-col items-center justify-center h-[300px] sm:h-[400px] md:h-full pt-0  sm:pt-6 md:pt-0">
 			<form className="w-full px-4 max-w-sm  bg-white rounded-lg">
 				<label htmlFor="CARDHOLDER NAME">
 					<span className="block text-[14px] text-[hsl(278,68%,24%)] mb-2">
