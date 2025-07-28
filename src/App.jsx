@@ -26,7 +26,7 @@ function Main() {
 
 	return (
 		<div className=" relative h-screen flex flex-col md:flex-row">
-			<div className="w-full relative h-[300px] mb-20 bg-[url('/images/bg-main-mobile.png')] bg-cover bg-no-repeat sm:w-full sm:h-[350px] md:bg-[url('/images/bg-main-desktop.png')] md:w-[30%] md:h-full">
+			<div className="w-full relative h-[200px] mb-20 bg-[url('/images/bg-main-mobile.png')] bg-cover bg-no-repeat sm:w-full sm:h-[350px] md:bg-[url('/images/bg-main-desktop.png')] md:w-[30%] md:h-full">
 				<Card
 					cardHolder={cardHolder}
 					cardNumber={cardNumber}
@@ -35,7 +35,7 @@ function Main() {
 				/>
 			</div>
 
-			<div className="w-full h-[400px] sm:h-[400px] md:h-full md:w-[70%]">
+			<div className="w-full sm:h-[400px] md:h-full md:w-[70%]">
 				<Form
 					setCardHolder={setCardHolder}
 					setCardNumber={setCardNumber}
@@ -52,9 +52,13 @@ function Main() {
 function Card({ cardHolder, cardNumber, expDate, cvc }) {
 	return (
 		<>
-			<div className="w-[70%] md:w-full absolute top-20 left-25 md:left-55 h-[100px] flex items-center justify-center">
+			<div className="w-[70%] md:w-full absolute top-10 left-25 md:left-55 h-[100px] flex items-center justify-center">
 				<div className="relative">
-					<img src="./images/bg-card-back.png" alt="card-back" />
+					<img
+						src="./images/bg-card-back.png"
+						alt="card-back"
+						className="w-full h-full"
+					/>
 					<div className="absolute top-15 left-50 md:top-20 md:left-65 text-white text-sm">
 						<input
 							type="text"
@@ -66,12 +70,20 @@ function Card({ cardHolder, cardNumber, expDate, cvc }) {
 					</div>
 				</div>
 			</div>
-			<div className="absolute top-35 left-8 md:left-35 w-[70%] md:w-full flex items-center justify-center">
+			<div className="absolute top-25 left-8 md:left-35 w-[70%] md:w-full flex items-center justify-center">
 				<div className="relative">
-					<img src="./images/bg-card-front.png" alt="card-front" />
+					<img
+						src="./images/bg-card-front.png"
+						alt="card-front"
+						className="w-full"
+					/>
 
 					<div className="absolute top-5 left-5 w-[100px] h-[50px] ">
-						<img src="./images/card-logo.svg" alt="card-logo" className="h-6 md:h-10" />
+						<img
+							src="./images/card-logo.svg"
+							alt="card-logo"
+							className="h-6 md:h-10"
+						/>
 					</div>
 					<div className="absolute bottom-13 w-full left-0 right-0  text-white text-lg ">
 						<input
