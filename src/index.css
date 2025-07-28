@@ -1,0 +1,8 @@
+@import "https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap";
+@import "tailwindcss";
+
+#root {
+  font-family: "Grotesk", "Space Grotesk", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+}
