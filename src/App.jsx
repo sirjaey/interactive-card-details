@@ -26,7 +26,7 @@ function Main() {
 
 	return (
 		<div className=" relative h-screen flex flex-col md:flex-row">
-			<div className="w-full h-[300px] mb-20 bg-[url('./images/bg-main-mobile.png')] bg-cover bg-no-repeat sm:w-full sm:h-[350px] md:bg-[url('./images/bg-main-desktop.png')] md:w-[30%] md:h-full">
+			<div className="w-full h-[300px] mb-20 bg-[url('/images/bg-main-mobile.png')] bg-cover bg-no-repeat sm:w-full sm:h-[350px] md:bg-[url('/images/bg-main-desktop.png')] md:w-[30%] md:h-full">
 				<Card
 					cardHolder={cardHolder}
 					cardNumber={cardNumber}
