@@ -142,8 +142,8 @@ function Form({
 	const maxLength = 2; // Maximum length for month and year inputs
 
 	return (
-		<div className="flex flex-col items-center justify-center h-[300px] sm:h-[400px] md:h-full pt-4 sm:pt-6 md:pt-0">
-			<form className="w-full max-w-sm ">
+		<div className="flex flex-col items-center justify-center h-[300px] sm:h-[400px] md:h-full pt-4  sm:pt-6 md:pt-0">
+			<form className="w-full px-4 max-w-sm  bg-white rounded-lg">
 				<label htmlFor="CARDHOLDER NAME">
 					<span className="block text-[14px] text-[hsl(278,68%,24%)] mb-2">
 						CARDHOLDER NAME
@@ -171,9 +171,9 @@ function Form({
 						required
 					/>
 				</label>
-				<div class="flex flex-wrap gap-4 w-full">
+				<div class="flex  gap-4 w-full">
 					{/* EXP. DATE */}
-					<div>
+					<div className="w-[50%] ">
 						<label class="block text-[14px] text-[hsl(278,68%,24%)] mb-2">
 							EXP. DATE (MM/YY)
 						</label>
@@ -181,7 +181,7 @@ function Form({
 							<input
 								type="text"
 								placeholder="MM"
-								className="w-20 px-2 py-2 border rounded-md border-gray-300 p-2 mb-4 placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-[hsl(264,97%,47%)]"
+								className="w-full max-w-[100px] px-2 py-2 border rounded-md  border-gray-300 p-2 mb-4 placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-[hsl(264,97%,47%)]"
 								onChange={handleExpDateMonthChange}
 								maxLength={maxLength}
 								min={1}
@@ -193,7 +193,7 @@ function Form({
 							<input
 								type="text"
 								placeholder="YY"
-								class="w-20 px-2 py-2 border rounded-md border-gray-300 p-2 mb-4 placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-[hsl(264,97%,47%)] "
+								class="w-full max-w-[100px] px-2 py-2 border rounded-md  border-gray-300 p-2 mb-4 placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-[hsl(264,97%,47%)] "
 								onChange={(e) => setExpDateYear(e.target.value)}
 								maxLength="2"
 								pattern="\d{2}"
@@ -204,14 +204,14 @@ function Form({
 					</div>
 
 					{/* CVC */}
-					<div>
+					<div className="w-[50%]">
 						<label class="block text-[14px] text-[hsl(278,68%,24%)] mb-2">
 							CVC
 						</label>
 						<input
 							type="text"
 							placeholder="e.g. 123"
-							class="w-50 sm:w-25 px-2 py-2 border rounded-md border-gray-300 p-2 mb-4 placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-[hsl(264,97%,47%)]"
+							className="w-full px-2 py-2 border rounded-md border-gray-300 mb-4 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[hsl(264,97%,47%)]"
 							maxLength="3"
 							pattern="\d{3}"
 							title="Please enter a valid CVC in the format 123"
