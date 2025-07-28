@@ -26,7 +26,7 @@ function Main() {
 
 	return (
 		<div className=" relative h-screen flex flex-col md:flex-row">
-			<div className="w-full h-[300px] mb-20 bg-[url('/images/bg-main-mobile.png')] bg-cover bg-no-repeat sm:w-full sm:h-[350px] md:bg-[url('/images/bg-main-desktop.png')] md:w-[30%] md:h-full">
+			<div className="w-full relative h-[300px] mb-20 bg-[url('/images/bg-main-mobile.png')] bg-cover bg-no-repeat sm:w-full sm:h-[350px] md:bg-[url('/images/bg-main-desktop.png')] md:w-[30%] md:h-full">
 				<Card
 					cardHolder={cardHolder}
 					cardNumber={cardNumber}
@@ -35,7 +35,7 @@ function Main() {
 				/>
 			</div>
 
-			<div className="w-full h-[300px] sm:h-[400px] md:h-full md:w-[70%]">
+			<div className="w-full h-[400px] sm:h-[400px] md:h-full md:w-[70%]">
 				<Form
 					setCardHolder={setCardHolder}
 					setCardNumber={setCardNumber}
@@ -52,10 +52,10 @@ function Main() {
 function Card({ cardHolder, cardNumber, expDate, cvc }) {
 	return (
 		<>
-			<div className="w-[70%] absolute top-20 left-25 h-[100px] flex items-center justify-center">
+			<div className="w-[70%] md:w-full absolute top-20 left-25 md:left-55 h-[100px] flex items-center justify-center">
 				<div className="relative">
 					<img src="./images/bg-card-back.png" alt="card-back" />
-					<div className="absolute top-15 left-50 text-white text-sm">
+					<div className="absolute top-15 left-50 md:top-20 md:left-65 text-white text-sm">
 						<input
 							type="text"
 							placeholder="000"
@@ -66,28 +66,28 @@ function Card({ cardHolder, cardNumber, expDate, cvc }) {
 					</div>
 				</div>
 			</div>
-			<div className="absolute top-35 left-8 w-[70%] flex items-center justify-center">
+			<div className="absolute top-35 left-8 md:left-35 w-[70%] md:w-full flex items-center justify-center">
 				<div className="relative">
 					<img src="./images/bg-card-front.png" alt="card-front" />
 
-					<div className="absolute top-5 left-5 w-[100px] h-[50px]">
-						<img src="./images/card-logo.svg" alt="card-logo" className="h-8" />
+					<div className="absolute top-5 left-5 w-[100px] h-[50px] ">
+						<img src="./images/card-logo.svg" alt="card-logo" className="h-6 md:h-10" />
 					</div>
-					<div className="absolute bottom-13 w-full left-0 right-0 text-white text-lg ">
+					<div className="absolute bottom-13 w-full left-0 right-0  text-white text-lg ">
 						<input
 							type="text"
 							placeholder="0000 0000 0000 0000"
 							value={cardNumber}
 							className="w-full 
-								text-center tracking-wider px- bg-transparent border-none text-white placeholder:gray-300 focus:outline-none focus:ring-0"
+								text-cener md:text-left px-6 md:px-6 tracking-wide bg-transparent border-none text-white placeholder:gray-300 focus:outline-none focus:ring-0"
 							disabled
 						/>
 					</div>
 					<div className="absolute bottom-5 left-6 text-white text-sm">
 						<input
 							type="text"
-							placeholder="JANE APPLESSED"
-							className="w-full bg-transparent border-none placeholder:gray-300 focus:outline-none focus:ring-0"
+							placeholder="SIRJAEY"
+							className="w-full bg-transparent text-[12px] border-none placeholder:gray-300 focus:outline-none focus:ring-0"
 							value={cardHolder}
 							disabled
 							onChange={() => {}}
@@ -97,7 +97,7 @@ function Card({ cardHolder, cardNumber, expDate, cvc }) {
 						<input
 							type="text"
 							placeholder="00/00"
-							className="w-full bg-transparent border-none placeholder:gray-300 focus:outline-none focus:ring-0"
+							className="w-full text-[12px] bg-transparent border-none placeholder:gray-300 focus:outline-none focus:ring-0"
 							value={expDate}
 							disabled
 							onChange={() => {}}
@@ -143,7 +143,7 @@ function Form({
 
 	return (
 		<div className="flex flex-col items-center justify-center h-[300px] sm:h-[400px] md:h-full pt-0  sm:pt-6 md:pt-0">
-			<form className="w-full px-4 max-w-sm  bg-white rounded-lg">
+			<form className="w-full px-4 max-w-sm bg-white rounded-lg">
 				<label htmlFor="CARDHOLDER NAME">
 					<span className="block text-[14px] text-[hsl(278,68%,24%)] mb-2">
 						CARDHOLDER NAME
