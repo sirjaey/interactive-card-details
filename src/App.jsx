@@ -57,25 +57,25 @@ function Card({ cardHolder, cardNumber, expDate, cvc }) {
 					<img
 						src="./images/bg-card-back.png"
 						alt="card-back"
-						className="w-full h-full"
+						className="w-[300px] h-[150px] md:w-full md:h-full"
 					/>
-					<div className="absolute top-15 left-50 md:top-20 md:left-65 text-white text-sm">
+					<div className="absolute top-16 left-52 md:top-20 md:left-65 text-white text-sm">
 						<input
 							type="text"
 							placeholder="000"
 							value={cvc}
-							className="w-full bg-transparent border-none placeholder:gray-300 focus:outline-none focus:ring-0"
+							className="w-full bg-transparent text-[12px] border-none placeholder:gray-300 focus:outline-none focus:ring-0"
 							disabled
 						/>
 					</div>
 				</div>
 			</div>
-			<div className="absolute top-25 left-8 md:left-35 w-[70%] md:w-full flex items-center justify-center">
+			<div className="absolute top-25 right-6 md:left-35 w-full md:w-full flex items-center justify-center">
 				<div className="relative">
 					<img
 						src="./images/bg-card-front.png"
 						alt="card-front"
-						className="w-full"
+						className="w-[300px] h-[150px] md:w-full md:h-full"
 					/>
 
 					<div className="absolute top-5 left-5 w-[100px] h-[50px] ">
@@ -91,14 +91,14 @@ function Card({ cardHolder, cardNumber, expDate, cvc }) {
 							placeholder="0000 0000 0000 0000"
 							value={cardNumber}
 							className="w-full 
-								text-cener md:text-left px-6 md:px-6 tracking-wide bg-transparent border-none text-white placeholder:gray-300 focus:outline-none focus:ring-0"
+								text-cener md:text-left px-6 md:px-6 tracking-normal bg-transparent border-none text-white placeholder:gray-300 focus:outline-none focus:ring-0"
 							disabled
 						/>
 					</div>
 					<div className="absolute bottom-5 left-6 text-white text-sm">
 						<input
 							type="text"
-							placeholder="SIRJAEY"
+							placeholder="SIRJAEY ISKING"
 							className="w-full bg-transparent text-[12px] border-none placeholder:gray-300 focus:outline-none focus:ring-0"
 							value={cardHolder}
 							disabled
@@ -154,8 +154,8 @@ function Form({
 	const maxLength = 2; // Maximum length for month and year inputs
 
 	return (
-		<div className="flex flex-col items-center justify-center h-[300px] sm:h-[400px] md:h-full pt-0  sm:pt-6 md:pt-0">
-			<form className="w-full px-4 max-w-sm bg-white rounded-lg">
+		<div className="flex flex-col items-center justify-center h-[300px] px-0 sm:h-[400px] w-full md:h-full pt-0  sm:pt-6 md:pt-0">
+			<form className="w-full max-w-full sm:max-w-sm px-4 sm:px-8 bg-white rounded-lg">
 				<label htmlFor="CARDHOLDER NAME">
 					<span className="block text-[14px] text-[hsl(278,68%,24%)] mb-2">
 						CARDHOLDER NAME
