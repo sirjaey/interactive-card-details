@@ -2,12 +2,6 @@
 
 This is a responsive and interactive card details form built with modern frontend tools. It allows users to input and preview their card details in real-time, validates user input, and provides a seamless experience across all screen sizes.
 
-- ✅ Add, edit, delete todos
-- 🔍 Search functionality
-- 📂 Filter by status (All / Completed / Pending)
-- 📦 LocalStorage persistence
-- 📄 Paginated views (10 todos per page)
-
 ---
 
 ## 📌 Features
@@ -89,26 +83,14 @@ This is a responsive and interactive card details form built with modern fronten
 
 **🏗️ Architecture Decisions**
 
-- APIs
-- fetchTodos - fetch todo items from the todo API
-- fetchTodoDetails - Display details page
-- upDateTodos - Edit and update todo tasks/item
-
 - Components
 
-  - UI — UI components from Shadcn
+  - Card
+  - Completed - Displays the completed state
+  - ErrorBoundry
+  - Form - Displays the form
+  - Main
 
-  - ErrorBoundary — single todo with edit/delete functionality
-
-  - LoadingSpinner — Page loading application
-
-- Pages
-  - CrashTest - For crash test
-  - Home - landing page
-  - Navbar - Navigation bar
-  - Todos - main list component
-  - SingleTodo - single todo with edit/delete functionality
-  - NotFound - 404 Error page
 - App.jsx
 - Index.css
 - Main.jsx - main
@@ -116,8 +98,17 @@ This is a responsive and interactive card details form built with modern fronten
 
 ---
 
-## Screenshots and videos of key features
+## Screenshots of key features
 
 ![Home page screenshot](./public/images/screenshot.png)
+![Error State screenshot](./public/images/errorstate.png)
+![Filled State screenshot](./public/images/filled.png)
+![Completed State screenshot](./public/images/completed.png)
 
 ---
+
+## Author
+
+- GitHub - https://github.com/sirjaey
+- LinkedIn - https://www.linkedin.com/in/joshua-abu-3180b0284/
+- X (Twitter) - https://x.com/sirjaey_
