@@ -40,7 +40,7 @@ This is a responsive and interactive card details form built with modern fronten
 1. **Clone the repository**
    ```bash
    git clone https://github.com/sirjaey/interactive-card-details
-   cd interactive-card-details-form-main
+   cd interactive-card-details
    ```
 2. **Install dependencies**
    ```bash
