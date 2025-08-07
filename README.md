@@ -107,8 +107,14 @@ This is a responsive and interactive card details form built with modern fronten
 
 ---
 
-## Author
+## 👤 Author
 
 - GitHub - https://github.com/sirjaey
 - LinkedIn - https://www.linkedin.com/in/joshua-abu-3180b0284/
 - X (Twitter) - https://x.com/sirjaey_
+
+---
+
+## 🔗 Links
+
+- Live Site URL: https://joshua-abu-interactive-card-details.netlify.app/
